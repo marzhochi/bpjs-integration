@@ -5,6 +5,22 @@ use Marzhochi\Bpjs\BpjsService;
 
 class KetersediaanKamar extends BpjsService
 {
+    private static $_instance;
+
+    public function __construct($configuration)
+    {
+        parent::__construct($configuration);
+    }
+
+    public static function getInstance($configuration)
+    {
+        if (isset(self::$_instance))
+            return self::$_instance;
+
+        self::$_instance = new KetersediaanKamar($configuration);
+
+        return self::$_instance;
+    }
 
     public function refKelas()
     {
