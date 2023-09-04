@@ -1,0 +1,25 @@
+{
+    "name": "marzhochi/bpjs",
+    "description": "Pengembangan API BPJS Kesehatan untuk SIMRS iMedis",
+    "type": "package",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "nullpunkt/lz-string-php": "^1.3"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "5.4.x-dev"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Ismail Marzuqi",
+            "email": "marzhochi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Marzhochi\\Bpjs\\": "src/"
+        }
+    }
+}
